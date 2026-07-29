@@ -168,7 +168,7 @@ const Home = () => {
             </div>
 
             {/* section 2 */}
-            <div className="bg-pure-greys-5 text-richblack-700">
+            <div className="bg-pure-greys-5 text-gray-700">
                 <div className="homepage_bg h-[320px]">
                     {/* Explore Full Catagory Section */}
                     <div className="mx-auto flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8">
@@ -216,7 +216,7 @@ const Home = () => {
 
 
             {/* section 3 */}
-            <div className="relative mx-auto my-20 flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 bg-richblack-900 text-white">
+            <div className="relative mx-auto my-20 flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 bg-gray-900 text-white">
                 {/* Become a instructor section */}
                 {/* <InstructorSection /> */}
 
