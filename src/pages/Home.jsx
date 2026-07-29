@@ -3,15 +3,15 @@ import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 import Banner from "../assets/Images/banner.mp4"
-//import Footer from "../components/Common/Footer"
-// import ReviewSlider from "../components/Common/ReviewSlider"
+import Footer from "../components/common/Footer"
+import ReviewSlider from "../components/common/ReviewSlider"
 import CTAButton from "../components/core/HomePage/Button"
 import CodeBlocks from "../components/core/HomePage/CodeBlocks"
-// import ExploreMore from "../components/core/HomePage/ExploreMore"
+import ExploreMore from "../components/core/HomePage/ExploreMore"
 import HighlightText from "../components/core/HomePage/HighlightText"
-// import InstructorSection from "../components/core/HomePage/InstructorSection"
-// import LearningLanguageSection from "../components/core/HomePage/LearningLanguageSection"
-// import TimelineSection from "../components/core/HomePage/Timeline"
+import InstructorSection from "../components/core/HomePage/InstructorSection"
+import LearningLanguageSection from "../components/core/HomePage/LearningLanguageSection"
+import TimelineSection from "../components/core/HomePage/TimelineSection"
 
 const Home = () => {
     return (
@@ -168,7 +168,7 @@ const Home = () => {
             </div>
 
             {/* section 2 */}
-            <div className="bg-pure-greys-5 text-gray-700">
+            <div className="bg-gray-100 text-gray-700">
                 <div className="homepage_bg h-[320px]">
                     {/* Explore Full Catagory Section */}
                     <div className="mx-auto flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8">
@@ -205,12 +205,12 @@ const Home = () => {
                             </CTAButton>
                         </div>
                     </div>
-                    {/* 
-                    Timeline Section - Section 2 */}
-                    {/* <TimelineSection /> */}
+
+                    {/* Timeline Section - Section 2 */}
+                    <TimelineSection />
 
                     {/* Learning Language Section - Section 3 */}
-                    {/* <LearningLanguageSection /> */}
+                    <LearningLanguageSection />
                 </div>
             </div>
 
@@ -218,17 +218,17 @@ const Home = () => {
             {/* section 3 */}
             <div className="relative mx-auto my-20 flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 bg-gray-900 text-white">
                 {/* Become a instructor section */}
-                {/* <InstructorSection /> */}
+                <InstructorSection />
 
                 {/* Reviws from Other Learner */}
                 <h1 className="text-center text-4xl font-semibold mt-8">
                     Reviews from other learners
                 </h1>
-                {/* <ReviewSlider /> */}
+                <ReviewSlider />
             </div>
 
             {/* footer */}
-            {/* <Footer /> */}
+            <Footer />
 
         </div>
     )
