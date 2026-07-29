@@ -7,9 +7,9 @@ import { TypeAnimation } from 'react-type-animation'
 const CodeBlocks = ({ active, position, heading, subheading, ctabtn1, ctabtn2, codeblocks, backgroundGradient, codeColor }) => {
 
     return (
-        <div className={`flex ${position} my-20 justify-between gap-10 `}>
+        <div className={`w-11/12 flex ${position} my-20 justify-between mx-auto gap-10 items-center`}>
             {/* section 1  */}
-            <div className="w-[50%] flex flex-col gap-8 ">
+            <div className="w-[50%] flex flex-col gap-8 ml-[20px]">
                 {heading}
                 <div className="text-gray-300 font-bold">
                     {subheading}
@@ -33,10 +33,10 @@ const CodeBlocks = ({ active, position, heading, subheading, ctabtn1, ctabtn2, c
 
             {/* section 2 */}
 
-            <div className="h-fit flex lfex-row text-[10px] w-[100%]">
-                {/* gradient hw */}
-
-                <div className="text-center flex flex-col w-[105]] text-gray-400 font-inter font-bold">
+            <div className={`h-fit flex flex-row ${backgroundGradient} py-3 text-[10px] border border-slate-400 sm:text-sm leading-[18px] sm:leading-6 relative w-[100%] lg:w-[470px] mr-[20px]`}>
+                {/*background gradient  */}
+                {/* indexing */}
+                <div className="text-center flex flex-col w-[10%] select-none text-gray-400 font-inter font-bold">
                     <p>1</p>
                     <p>2</p>
                     <p>3</p>
@@ -49,8 +49,8 @@ const CodeBlocks = ({ active, position, heading, subheading, ctabtn1, ctabtn2, c
                     <p>10</p>
                     <p>11</p>
                 </div>
-
-                <div className={`w-[90%] flex flex-col gap-2 font-bold font-mono ${codeColor} pr-2`}>
+                {/* codes */}
+                <div className={`w-[90%] flex flex-col gap-2 font-bold font-mono  ${codeColor} pr-1`}>
                     <TypeAnimation
                         sequence={[codeblocks, 2000, ""]}
                         repeat={Infinity}

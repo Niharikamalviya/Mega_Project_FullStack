@@ -39,7 +39,7 @@ const Home = () => {
                     </CTAButton>
 
                 </div>
-                <div className="max-w-[980px] mx-3 my-12 shadow-blue-200 shadow-lg">
+                <div className="max-w-[1200px] mx-3 my-12 shadow-blue-200 shadow-lg">
                     <video
                         className=""
                         muted
@@ -93,8 +93,12 @@ const Home = () => {
                             </nav>`
 
                         }
-                    // codeColor={
+                        codeColor={
+                            "text-yellow-300"
 
+                        }
+                    // backgroundGradient={
+                    //     "bg-[radial-gradient(circle,_rgba(61,54,1,1)_21%,_rgba(3,3,0,1)_42%)]"
                     // }
                     />
                 </div>
@@ -131,9 +135,9 @@ const Home = () => {
                         }
 
                         codeblocks={`<!DOCTYPE html> 
-                            <html> 
-                            head><title>Example</ 
-                            title><link rel="stylesheet" href="styles.css"> 
+                            <html lang="en"> 
+                            <head>
+                            <title><link rel="stylesheet" href="styles.css"> 
                             </head> 
                             <body> 
                             <h1><a href="/">Header</a> 
@@ -142,9 +146,14 @@ const Home = () => {
                             <a href="three/">Three</a> 
                             </nav>`
 
-                        }
-                    // codeColor={
 
+                        }
+                        codeColor={
+                            "text-cyan-200"
+                        }
+
+                    // backgroundGradient={
+                    //     "bg-[radial-gradient(circle,_rgba(4,138,138,1)_0%,_rgba(2,2,94,1)_35%,_rgba(0,0,0,1)_100%)]"
                     // }
                     />
                 </div>
@@ -152,6 +161,13 @@ const Home = () => {
             </div>
 
             {/* section 2 */}
+            <div className="bg-gray-100 text-gray-700">
+                <div className="homepage_bg h-[333px]">
+                    <div className="w-11/12 max-w-maxContent flex items-center gap-5 mx-auto" ></div>
+
+                </div>
+
+            </div>
 
 
             {/* section 3 */}
